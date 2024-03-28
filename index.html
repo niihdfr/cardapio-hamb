@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Burguer</title>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+
+            <img src="assets/images/hamb-3.png" alt="" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 cursor-pointer">
+            
+            <h1 class="text-6xl mt-4 mb-2 font-Poppins font-light text-amber-800 tracking-wider">Burguer</h1>
+
+            <span class="text-gray-300 hover:text-blue-400 text-sm font-light mb-5 underline"><a href="https://maps.app.goo.gl/swB3xMF9G24PoLA66">Rua Dias da Cruz, 314, Meier - RJ</a> </span>
+
+            <div class="bg-[#54CC0A] px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="font-normal font- text-white font-[Poppins]">Seg a Dom - 18:00 as 22:00</span>
+            </div>
+        </div>  
+    </header>
+    <!-- FIM HEADER -->
+
+    <h2 class="text-3xl font- text-gray-950 font-[Poppins] text-center mt-9 mb-6">
+        Conheca nosso menu
+    </h2>
+
+    <!-- INICIO MENU -->
+    <div id="menu">
+        <main class="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2 mt-9">
+
+                <img src="assets/images/hamb-1.png" alt="Hamburguer Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font- text-gray-950 font-[Poppins] mb-2">Hamburguer Smash</p>
+                    <p class="text-xs font- text-gray-950 font-[Poppins]">Pao levinho de fermentacao natural, burguer 160g, queito prato, maionese da casa, salada e bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-normal font- text-green-900 font-[Poppins] text-lg">R$ 24.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Hamburguer Smash" data-price="24.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2 md:mt-8">
+
+                <img src="assets/images/hamb-2.png" alt="Supreme Bacon" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font- text-gray-950 font-[Poppins] mb-2">Supreme Bacon</p>
+                    <p class="text-xs font- text-gray-950 font-[Poppins]">Pao levinho de fermentacao natural, burguer 160g, queito prato, maionese da casa, salada e bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-normal font- text-green-900 font-[Poppins] text-lg">R$ 29.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Supreme Bacon" data-price="29.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+
+                <img src="assets/images/hamb-3.png" alt="Hamburguer Cheddar" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font- text-gray-950 font-[Poppins] mb-2">Double Cheddar</p>
+                    <p class="text-xs font- text-gray-950 font-[Poppins]">Pao levinho de fermentacao natural, burguer 160g, queito prato, maionese da casa, salada e bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-normal font- text-green-900 font-[Poppins] text-lg">R$ 26.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Double Cheddar" data-price="26.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+
+                <img src="assets/images/hamb-4.png" alt="Hamburguer Salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font- text-gray-950 font-[Poppins] mb-2">Hamburguer Salad</p>
+                    <p class="text-xs font- text-gray-950 font-[Poppins]">Pao levinho de fermentacao natural, burguer 160g, queito prato, maionese da casa, salada e bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-normal font- text-green-900 font-[Poppins] text-lg">R$ 20.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Hamburguer Salad" data-price="20.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+
+                <img src="assets/images/hamb-5.png" alt="Hamburguer da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font- text-gray-950 font-[Poppins] mb-2">Hamburguer da Casa</p>
+                    <p class="text-xs font- text-gray-950 font-[Poppins]">Pao levinho de fermentacao natural, burguer 160g, queito prato, maionese da casa, salada e bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-normal font- text-green-900 font-[Poppins] text-lg">R$ 25.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Hamburguer da Casa" data-price="25.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+
+                <img src="assets/images/hamb-6.png" alt="Combo da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font- text-gray-950 font-[Poppins] mb-2">Combo da Casa</p>
+                    <p class="text-xs font- text-gray-950 font-[Poppins]">Pao levinho de fermentacao natural, burguer 160g, queito prato, maionese da casa, salada e bacon + batata frita.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-normal font- text-green-900 font-[Poppins] text-lg">R$ 29.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Combo da Casa" data-price="29.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+
+            <h2 class="text-2xl text-center mb-10">Bebidas</h2>
+
+        </div>
+
+        <!-- GRID BEBIDAS-->
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2 w-full">
+
+                <img src="assets/images/refri-1.png" alt="Coca Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-normal font- text-gray-950 font-[Poppins] mb-2">Coca Lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold- font- text-green-900 font-[Poppins]">R$ 5.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Coca Lata" data-price="5.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2 w-full">
+
+                <img src="assets/images/refri-2.png" alt="Guarana Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-normal font- text-gray-950 font-[Poppins] mb-2">Guarana Lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold- font- text-green-900 font-[Poppins]">R$ 5.90</p>
+                        <button class="bg-gray-900 px-3 py-1 rounded add-to-cart-btn" data-name="Guarana Lata" data-price="5.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM DO PRODUTO -->
+
+        </div>
+        <!-- FIM GRID BEBIDAS-->
+    </div>
+    <!-- FIM MENU -->
+
+    <!-- MODAL CART -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[80%] md:min-w-[600px]">
+            <h2 class="text-center font-[Poppins] text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold font-[Poppins]">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-[Poppins] mt-4">Endereco de entrega:</p>
+            <input
+             type="text"
+             placeholder=" Digite seu endereco completo..."
+             id="address"
+             class="w-full border p-1 rounded my-2 outline-none">
+
+             <p class="text-red-500 hidden" id="address-warn">Digite seu endereco completo!</p>
+
+             <div class="flex items-center justify-between mt-5 w-full">
+                <button class="hover:underline" id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500/70 hover:bg-green-500/100 text-white px-4 py-1 rounded-full">Finalizar pedido</button>
+             </div>
+        </div>
+    </div>
+    <!-- FIM MODAL CART -->
+
+    <!-- BUTTON CART FOOTER-->
+    <footer class="w-full bg-red-950 bg-opacity-75  py-3 fixed bottom-0 z-40 flex items-center justify-center ">
+        <button class="flex items-center gap-2 text-white font-[Poppins]" id="cart-btn">
+            (<span id="cart-count"></span>)
+            <span>Ver meu carrinho</span>
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- BUTTON CART FOOTER-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+</body>
+</html>
