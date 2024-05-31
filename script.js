@@ -11,19 +11,16 @@ const addressWarn = document.getElementById("address-warn")
 
 let cart = []
 
-// Abrir o modal do carrinho
 cartBtn.addEventListener("click", function() {
     updateCartModal()
     cartModal.style.display = "flex"
     
 })
 
-// Fechar quando clica no botao
 closeModalBtn.addEventListener("click", function() {
     cartModal.style.display = "none"
 })
-
-// Fechar quando clicar fora 
+ 
 cartModal.addEventListener("click", function(event) {
     if(event.target == cartModal){
         cartModal.style.display = "none"
@@ -38,11 +35,9 @@ menu.addEventListener("click", function(event){
         const name = parentButton.getAttribute("data-name")
         const price = parseFloat(parentButton.getAttribute("data-price"))
         addToCart(name,price)
-    }
-
+    } 
 })
 
-// Adicionar item no carrinho
 function addToCart(name,price) {
     const existingItem = cart.find(item => item.name === name)
 
@@ -55,9 +50,9 @@ function addToCart(name,price) {
         price, 
         quantity: 1,
     })
+    cartCounter.innerHTML = cart.length
 }
 
-// Atualiza o carrinho
 
 function updateCartModal(){
     cartItemsContainer.innerHTML = ""
@@ -83,7 +78,6 @@ function updateCartModal(){
         `
 
         total += item.price * item.quantity
-
         cartItemsContainer.appendChild(cartItemElement)
     })
 
@@ -93,15 +87,13 @@ function updateCartModal(){
     })
 
     cartCounter.innerHTML = cart.length
-}
-
-// Funcao para remover o item do carrinho 
+} 
 
 cartItemsContainer.addEventListener("click", function(event) {
     if (event.target.classList.contains("remove-btn")) {
         const name = event.target.getAttribute("data-name");
         removeItemCart(name);
-        updateCartModal(); // Chame a função para atualizar a interface do carrinho após a remoção do item
+        updateCartModal();
     }
 });
 
@@ -139,9 +131,9 @@ checkoutBtn.addEventListener("click", function () {
             text: "Ops, o restaurante esta fechado!",
             duration: 3000,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "left", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top",
+            position: "left", 
+            stopOnFocus: true, 
             style: {
                 background: "#ef4444",
   },
